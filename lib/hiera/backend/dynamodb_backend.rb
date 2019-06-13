@@ -35,6 +35,7 @@ class Hiera
         table = Config[:dynamodb][:table]
         Hiera.debug("Hiera dynamodb Client connected. Checking that table: #{table} requested in config exists")
         exists = ddb.list_tables({})
+        Hiera.debug(exists)
         Hiera.debug("Looking for #{key}")
         resp = ddb.get_item({
           key: {
