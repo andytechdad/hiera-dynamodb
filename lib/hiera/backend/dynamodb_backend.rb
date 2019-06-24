@@ -32,7 +32,11 @@ class Hiera
           Hiera.debug('No configuration found, will fall back to env variables or IAM role')
           ddb = Aws::DynamoDB::Client.new
         end
-        table = Config[:dynamodb][:table]
+        if Config[:dynamodb].include?(:table)
+          table = Config[:dynamodb][:table]
+        else
+          table = 'puppet'
+        end
         Hiera.debug("Hiera dynamodb Client connected. Checking that table: #{table} requested in config exists")
         exists = ddb.list_tables({})
         Hiera.debug(exists)
@@ -47,11 +51,9 @@ class Hiera
         items = resp.to_h[:item]
         Hiera.debug(items)
         answer = items["hiera_value"]
-        Hiera.debug(answer)
+        Hiera.debug("Value Returned: #{answer}")
         return answer
       end
-
-
     end
   end
 end
