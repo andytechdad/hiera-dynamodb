@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name    = %q{hiera_dynamodb}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
   s.date    = %q{2019-06-13}
   s.summary = %q{Use AWS DynamoDB as a hiera backend}
   s.author  = "Andy Brown"
