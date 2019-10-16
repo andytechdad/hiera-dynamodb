@@ -1,6 +1,6 @@
 # hiera-dynamodb
 
-![Gitlab Workflow](https://github.com/andytechdad/hiera-dynamodb/workflows/Ruby%20Gem/badge.svg "Build Pipeline")
+![Gitlab Workflow](https://github.com/andytechdad/hiera-dynamodb/workflows/Build/badge.svg "Build Pipeline")
 
 A hiera backend for an AWS DynamoDB table
 
