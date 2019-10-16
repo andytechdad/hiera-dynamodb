@@ -1,12 +1,9 @@
-name: Ruby Gem
+name: Ruby Gem Publish
 
 on:
-  pull_request:
-    branches:
-      - master
   push:
     branches:
-      - master
+      - releases/* # Push events to branches matching refs/heads/releases/*
 
 jobs:
   build:

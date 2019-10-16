@@ -1,5 +1,7 @@
 # hiera-dynamodb
 
+![Gitlab Workflow](https://github.com/andytechdad/hiera-dynamodb/workflows/Ruby%20Gem/badge.svg "Build Pipeline")
+
 A hiera backend for an AWS DynamoDB table
 
 To use this backend, add the following to your hiera.yaml
