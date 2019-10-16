@@ -29,3 +29,5 @@ Future updates will support custom column names.
  - [ ] re-write for hiera5
  - [ ] Tests!
  - [ ] make a gem to install via ruby gems
+
+ Enjoy!
